@@ -24,15 +24,17 @@ El servidor soporta los puntos:
 Para poder ejecutar este servidor necesitamos instalar:
 *  **Node**: Para ejecutar Javascript desde fuera del navegador. [Instalación desde la web de Node](https://nodejs.org/en/) - Debes instalar la versión **LTS**.
 * **NPM**: Para gestionar los paquetes de node. Ya está instalado por defecto con node.
-* **mongodb**: Es una base de datos no relacional. Almacena JSON. [Instalarlo desde la web de MongoDB]().
+* **mongodb**: Es una base de datos no relacional. Almacena JSON. [Instalarlo desde la web de MongoDB](https://www.mongodb.com/download-center/community).
 
 # Ejecución del servidor
 
 Una vez has realizado la instalación, descarga este repositorio en un directorio de tu máquina. Desde un terminal dirígete a la ruta de donde lo hayas descargado y ejecuta los siguientes comandos:
 
-`npm install` : Para descargar las dependencias del proyecto.
+`net start MongoDB`: Este comando lo debes ejecutar desde una consola en la que seas *superusuario*. Este comando arranca la base de datos mongoDB.
 
-`npm run start` : Para inicializar el servidor.
+`npm install` : Para descargar las dependencias del proyecto. Sólo lo debes correr este comando una vez.
+
+`npm run start` : Para inicializar el servidor. Este comando se debe ejecutar cada vez que quieras arrancar el servidor. 
 
 # Notas
 El servidor utiliza la base de datos `'mongodb://localhost/ClaseTaskdb'`
