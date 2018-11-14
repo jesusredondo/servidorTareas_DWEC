@@ -1,5 +1,5 @@
 # API de tareas
-Repositorio creado para que cada alumno pueda ejecutar una copia en locar de un servidor HTTP de una API REST sencilla.
+Repositorio creado para que cada alumno pueda ejecutar una copia en local de un servidor HTTP de una API REST sencilla.
 
 El servidor maneja tareas que tienen los siguientes atributos:
 * **_id**: Es un identificador para la tarea. Se genera automáticamente en el servidor.
