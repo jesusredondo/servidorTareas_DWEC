@@ -1,0 +1,5 @@
+#Instalamos los mmódulos a mano
+/node_modules
+
+#ficheros de mac
+.DS_Store
