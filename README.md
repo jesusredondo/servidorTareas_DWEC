@@ -6,6 +6,7 @@ El servidor maneja tareas que tienen los siguientes atributos:
 * **titulo**: El título de la tarea. Es una cadena obligatoria.
 * **descripcion**: La descripción de la tarea. Es una cadena obligatoria.
 * **fecha_creacion**: Es la fecha en la que se crea la tarea. No es obligatoria, si no se introduce se toma la fecha actual.
+* **estado**: Estado en el que está la tarea. Una tarea que puede valer: "pendiente", "haciendo" ó "completada". Si no se introduce este valor, por defecto está en pendiente.
 
 
 El servidor soporta los puntos:
