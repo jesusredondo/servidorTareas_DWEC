@@ -7,7 +7,7 @@ var express = require('express'),
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/ClaseTaskdb');
+mongoose.connect('mongodb://localhost/ClaseTaskdb',{ useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
