@@ -25,19 +25,19 @@ El servidor soporta los puntos:
 Para poder ejecutar este servidor necesitamos instalar:
 *  **Node**: Para ejecutar Javascript desde fuera del navegador. [Instalación desde la web de Node](https://nodejs.org/en/) - Debes instalar la versión **LTS**.
 * **NPM**: Para gestionar los paquetes de node. Ya está instalado por defecto con node.
-* **mongodb**: Es una base de datos no relacional. Almacena JSON. [Instalarlo desde la web de MongoDB](https://www.mongodb.com/download-center/community).
+* **mongodb**: Es una base de datos no relacional. Almacena JSON. Ya no es necesario [Instalarlo desde la web de MongoDB](https://www.mongodb.com/download-center/community).
 
 # Ejecución del servidor
 
-Una vez has realizado la instalación, descarga este repositorio en un directorio de tu máquina. Desde un terminal dirígete a la ruta de donde lo hayas descargado y ejecuta los siguientes comandos:
+Una vez has realizado la instalación, descarga este repositorio en un directorio de tu máquina. Desde un terminal dirígete a la ruta de donde lo hayas descargado y realiza los siguientes pasos:
 
-`net start MongoDB`: Este comando lo debes ejecutar desde una consola en la que seas *superusuario*. Este comando arranca la base de datos mongoDB.
+1. **Modifica el fichero .env con los datos de tu Atlas**: En los apuntes están los pasos necesarios.
 
-`npm install` : Para descargar las dependencias del proyecto. Sólo lo debes correr este comando una vez.
+2. **Ejecuta desde la carpeta `npm install`** : Para descargar las dependencias del proyecto. Sólo lo debes correr este comando una vez.
 
-`npm run start` : Para inicializar el servidor. Este comando se debe ejecutar cada vez que quieras arrancar el servidor. 
+3. **Ejecuta desde la carpeta `npm run start`** : Para inicializar el servidor. Este comando se debe ejecutar cada vez que quieras arrancar el servidor. 
 
 El servidor está visible en [http://localhost:3000/tasks/](http://localhost:3000/tasks/).
 
 # Notas
-El servidor utiliza la base de datos `'mongodb://localhost/ClaseTaskdb'`
+La licencia de este repositorio es [Creative Commons cc-3](https://creativecommons.org/licenses/by/3.0/)

@@ -4,10 +4,17 @@ var express = require('express'),
   mongoose = require('mongoose'),
   Task = require('./api/models/todoListModel'), //created model loading here
   bodyParser = require('body-parser');
+  const dotenv = require('dotenv');
+
+//IMPORTAR VALORES DE ENV:
+dotenv.config();
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/ClaseTaskdb',{ useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(
+    process.env.DB_CONNECT,
+    { useNewUrlParser: true, useUnifiedTopology: true },
+    ()=> console.log('Conectado a tu BASE DE DATOS de Atlas'));
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
